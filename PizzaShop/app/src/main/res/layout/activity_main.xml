@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- Here you put the rest of your current view-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/red3"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="ika.pizzashop.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/white"
+    android:text="MARGARITA"
+    android:textStyle="bold"
+    android:textSize="30dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/slika"
+            android:layout_width="193dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pizza2" />
+
+        <TextView
+            android:id="@+id/textView_MARGARITA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/slika"
+            android:layout_toRightOf="@+id/slika"
+            android:text="320 (32cm)"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView_MARGARITA"
+            android:layout_toEndOf="@+id/slika"
+            android:layout_toRightOf="@+id/slika"
+            android:text="580 (50cm)"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PORUCI"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:onClick="sendMessage"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="CAPRICCIOSA"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.51">
+
+        <ImageView
+            android:id="@+id/slika_CAPRICCIOSA"
+            android:layout_width="193dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/cap" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/slika_CAPRICCIOSA"
+            android:layout_toRightOf="@+id/slika_CAPRICCIOSA"
+            android:text="350 (32cm)"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView"
+            android:layout_toEndOf="@+id/slika_CAPRICCIOSA"
+            android:layout_toRightOf="@+id/slika_CAPRICCIOSA"
+            android:text="720 (50cm)"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <Button
+
+        android:id="@+id/button_CAPRICCIOSA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PORUCI"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:onClick="openCapricciosa"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="PEPERONI"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/slika_PEPERONI"
+            android:layout_width="193dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/pizza5" />
+
+        <TextView
+            android:id="@+id/textView_PEPERONI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/slika_PEPERONI"
+            android:layout_toRightOf="@+id/slika_PEPERONI"
+            android:text="350 (32cm)"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView_PEPERONI"
+            android:layout_toEndOf="@+id/slika_PEPERONI"
+            android:layout_toRightOf="@+id/slika_PEPERONI"
+            android:text="750 (50cm)"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <Button
+
+        android:id="@+id/button_PEPERONI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PORUCI"
+        android:onClick="openPeperoni"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:background="@android:color/holo_orange_dark"/>
+
+
+</LinearLayout>
+</ScrollView>
